@@ -1,0 +1,1 @@
+Simple Signup form. Using [Firebase](https://www.firebase.com/) on the backend

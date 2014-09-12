@@ -1,0 +1,43 @@
+function (e) {
+  if (e.keyCode === 13) {
+//    debugger;
+    var instructorFlag = $("#instructorInput");
+    var instructor = instructorFlag.val() || 1;
+    var name = $("#nameInput").val();
+    $("#nameInput").val("");
+    $("#instructorInput").val("");
+
+    if (name.length === 0) {
+      return;
+    }
+
+    var userScoreRef = userListRef.child(name);
+
+    // Use setWithPriority to put the name / score in Firebase, and set the priority to be the score.
+    userScoreRef.setWithPriority({
+      name: name,
+      instructor: instructor
+    }, instructor);
+  }
+}
+
+
+scoreSnapshot.val().instructor
+
+
+    userScoreRef.setWithPriority({
+      name: name,
+      //instructor: instructor
+    }, priority);
+
+
+
+// Maybe this will be better
+$('.btn').click(function() {
+  $('<li>').text('New item').appendTo('.items');
+});
+
+$('.btn').click(function() {
+  $('<li>').text('New item').prependTo('.items');
+});
+

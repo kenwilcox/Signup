@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SignUp!</title>
+  <link rel="stylesheet" href="stylesheets/libs/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/libs/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Signup</h1>
+    <div class="form-group">
+      <p>There should be some text here about what this is all about, but I'm lazy. Put yer name here if you want.</p>
+      <input type="text" id="nameInput" placeholder="Student Name" class="form-control">
+    </div>
+
+<!--
+    <div class="form-group">
+      <input type="text" id="instructorInput" placeholder="Instructor" class="form-control">
+    </div>
+-->
+            
+    <h1>Student List</h1>
+    <table class="table table-hover" id="signupTable">
+      <tr>
+        <th>Name</th>
+        <th>Instructor</th>
+      </tr>
+    </table>
+        
+  </div>
+  
+  <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="scripts/libs/bootstrap.min.js"></script>
+  <script src="scripts/signup.js"></script>
+</body>
+
+</html>
